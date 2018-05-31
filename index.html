@@ -1,282 +1,237 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+﻿<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta http-equiv="X-UA-Compatible" content="IE=7" />
-    <title>首页</title>
-    <style type="text/css">
-        html, body
-        {
-            margin: 0;
-            border: 0;
-            padding: 0;
-            background-color: #fff;
-            font-size: 12px;
-        }
-        body
-        {
-            filter: progid:DXImageTransform.Microsoft.Gradient (gradientType=0,startColorStr=#f8fafd,endColorStr=#d6d7db);
-            background: -moz-linear-gradient(top, #f8fafd, #d6d7db);
-            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f8fafd), to(#d6d7db));
-        }
-        a
-        {
-            color: #000;
-            text-decoration: none;
-            border-width: 0px;
-        }
-        a img
-        {
-            border-width: 0px;
-        }
-        a:Active
-        {
-            color: #0981b7;
-        }
-        table, td
-        {
-            border-collapse: collapse;
-            border-width: 0px;
-        }
-        #content_div
-        {
-            width: 1024px;
-            margin: 0 auto auto auto;
-            background-color: #fff;
-        }
-        #divTipLeft
-        {
-            width: 17px;
-            display: inline-block;
-            float: left;
-            z-index: 2;
-            margin-left: 200px;
-            _margin-left: 100px;
-        }
-        #divTipMid
-        {
-            width: 470px;
-            display: inline-block;
-            float: left;
-            border: solid 1px #c0c0c0;
-            border-left-width: 0px;
-            border-right-width: 0px;
-            height: 47px;
-            _height: 44px;
-        }
-        #txtSearch
-        {
-            width: 100%;
-            height: 43px;
-            border-width: 0px;
-            line-height: 43px;
-            color: #8D8D8D;
-            background-color: Transparent;
-            outline-width: 0px;
-        }
-        #divFind
-        {
-            width: 120px;
-            display: inline-block;
-            float: left;
-            z-index: 2;
-        }
-        #btnFind
-        {
-            width: 138px;
-            height: 49px;
-            background-repeat: no-repeat;
-            border-width: 0px;
-            background-image: url('http://www.windin.com/windin2/images/bb.jpg');
-            display: inline-block;
-            cursor: hand;
-        }
-        #btnFind:hover
-        {
-            background-image: url('http://www.windin.com/windin2/images/_bb.jpg');
-        }
-		
-		
-		
-		
-		
-		
-		html, body{margin: 0;border: 0;padding: 0;background-color: #fff;font-size: 12px;}
-        a{color: #000;text-decoration: none;border-width: 0px;}
-        a img{border-width: 0px;}
-        a:Active{color: #0981b7;}
-        table, td{border-collapse: collapse;border-width: 0px;}
-        #menu_1, #menu_2{width: 351px;background-repeat: no-repeat;background-position: bottom;text-align: center;color: White;cursor: hand;font-size: 16px;font-weight: bold;word-spacing: 4px;}
-        #menu_1{background-image: url('http://www.windin.com/windin2/images/hand-l.jpg');}
-        #menu_2{background-image: url('http://www.windin.com/windin2/images/hand-r.jpg');}
-        #menu_1:hover{background-image: url('http://www.windin.com/windin2/images/_hand-l.jpg');}
-        #menu_2:hover{background-image: url('http://www.windin.com/windin2/images/_hand-r.jpg');}
-        #menu_mid{width: 0px;background-image: url('http://www.windin.com/windin2/images/hand-my.gif');background-repeat: no-repeat;background-position: bottom;}
-		
-		
-		
-		
-
-        a{color: #000;text-decoration: none;border-width: 0px;}
-        a img{border-width: 0px;}
-        a:Active{color: #0981b7;}
-        table, td{border-collapse: collapse;border-width: 0px;}
-        #foot_top{background-position: bottom;background-image: url('../images/bt.gif');background-repeat: repeat-x;height: 9px;}
-        #foot_b{background-color: #ececeb;font-family: 方正黑体;color: #030000;}
-        #foot_b1{width: 98%;margin: 0 auto;height: 53px;border-bottom: solid 1px #cdcccc;}
-        #foot_b1 .hqDiv{width: 250px;float: left;overflow: hidden;white-space: nowrap;margin-top: 18px;border-right: solid 1px #c0c0c0;}
-        #foot_b2{width: 98%;margin: 0 auto;height: 40px;border-top: solid 1px #fff;line-height: 40px;white-space: nowrap;}
-        .foot_a{}
-        .foot_a:hover, .foot_a:Active{color: #0981b7;}
-        .style1{color: #030000;font-weight: bold;font-size: 13px;padding-left: 4px;}
-        .style2{font-family: 宋体, Arial, Helvetica, sans-serif;color: #e60012;}
-        .style2_1{font-family: 宋体, Arial, Helvetica, sans-serif;color: #01782A;}
-        .style3{color: #a7a7a6;}
-        .zstb{width: 245px;}
-    </style>
-
-    <script type="text/javascript">
-        function IE6NoMoreEvent(func) { var oldonload = window.onload; if (typeof window.onload != "function") { window.onload = func; } else { window.onload = function() { oldonload(); func(); } }; }
-
-        if (/MSIE\s([^;|^)]+)/.test(navigator.userAgent) && parseFloat(RegExp["$1"]) < 7) {
-            IE6NoMoreEvent(function() {
-                try {
-                    var chirdNode = document.createElement("div");
-
-                    chirdNode.innerHTML = "<div style='text-align:center;clear:both;position:relative;'><div style='border:1px solid #F7941D; background:#FEEFDA;width:99%;height:70px;'><div style='float:right;top:3px;'><a style='text-decoration:none;font-size:12px;color:#000;' href='javascript:void;' title='关闭(close)' onclick='javascript:this.parentNode.parentNode.parentNode.style.display=\"none\"; return false;'>[关闭]</a></div><div style='width:590px;'><div style='float:left;width:580px;margin-left:12px;text-align:left;padding:0px;overflow:hidden;'><div style='font-size:14px;font-weight:bold;margin-top:12px;'>您当前使用的IE的浏览器的版本过低（6.0或者6.0以下）</div><div style='font-size:12px;margin-top:16px;line-height:12px;'>为了更好的使用我们提供的产品，请到微软官网下载升级到一个高版本的IE浏览器(推荐版本：8.0或者9.0)。</div></div></div></div></div>";
-                    document.body.insertBefore(chirdNode, document.body.childNodes[0]);
-                } catch (err) { }
-            });
-        }
-
-    </script>
-
+<title>第一星座网_女生都爱上的权威星座网站</title>
+<meta name="description" content="专业的占星学星座网，提供星座知识、星座个性分析、星座开运方法、星座运势、配对、查询以及心理测试、塔罗牌、在线算命、风水、生肖等星相命理相关内容。" />
+<meta name="keywords" content="星座,星座网,12星座." />
+<meta charset="UTF-8"><meta content="initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0" name="viewport">
+<meta name="applicable-device" content="mobile"><meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta http-equiv="Cache-Control" content="no-transform"/>
+<meta http-equiv="Cache-Control" content="no-siteapp"/>
+<link rel="shortcut icon" type="image/x-icon" href="https://3g.d1xz.net/statics/d1xz/favicon.ico" />
+<link rel="stylesheet" href="https://3g.d1xz.net/statics/d1xz/wap/style.css">
 </head>
 <body>
-    <div id="content_div">
-        <div id="top">
-		
-		
-
-    <div style="height: 56px;">
-        <img alt="" src="http://www.windin.com/windin2/images/tr.jpg" style="float: right" /></div>
-    <div>
-        <div style="border-width: 0px; padding-left: 78px">
-            <table>
-                <tr>
-                    <td>
-                        <a href="Index.htm" target="_parent">
-                            <img alt="Logo" src="http://www.windin.com/windin2/images/logo.gif" /></a>
-                    </td>
-                    <td style="width: 47px">
-                    </td>
-                    <td>
-                        <table style="height: 39px">
-                            <tr>
-                                <td id="menu_1" onclick="JavaScript:window.open('Product.htm');">
-                                    &nbsp;
-                                </td>
-                                <td id="menu_mid">
-                                </td>
-                                <td id="menu_2" onclick="JavaScript:window.open('http://114.80.154.42/MobileNetWeb/Ad/iWind/iWind.htm');">
-                                    &nbsp;
-                                </td>
-                            </tr>
-                        </table>
-                    </td>
-                </tr>
-            </table>
-        </div>
-    </div>
-
-			
-			
-			
-			
-        </div>
-        <div style="height: 614px;">
-            <div style="text-align: center;  margin-top: 66px; height:55px">
-                <!--div id="divTipLeft">
-                    <img src="images/万点首页0724_03.jpg" /></div>
-                <div id="divTipMid">
-                    <input type="text" id="txtSearch" value="代码 / 简称 / 拼音" onblur="txtSearch_onblur(this)"
-                        onfocus="txtSearch_onfocus(this)" autocomplete="off" />
-                </div>
-                <div id="divFind">
-                    <input id="btnFind" type="button" onclick="return btnWindCode()" /></div-->
-            </div>
-            <div style="text-align: center;  margin-top:66px">
-                <table width="95%" style=" margin:0px auto ">
-                    <tr>
-                        <td style="width: 50%" align="center">
-                            <a href="Product.htm" target="_blank">
-                                <img alt="" src="http://www.windin.com/windin2/images/p1.jpg" /></a>
-                        </td>
-                        <td align="right" valign="bottom" style=" padding-right:60px">
-                            <img src="http://www.windin.com/windin2/images/二维码.jpg" />
-                            <br />
-                            <a href="http://114.80.154.42/MobileNetWeb/Ad/iWind/iWind.htm" target="_blank">                            	 
-                                <img src="http://www.windin.com/windin2/images/p2.jpg" /></a>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-        <div id="foot">
-
-        <div id="foot_top">
-        </div>
-        <div id="foot_b">
-            <div id="foot_b1">
-                <div class="hqDiv" id="zsdiv0">
-                </div>
-                <div class="hqDiv" id="zsdiv1">
-                </div>
-                <div class="hqDiv" id="zsdiv2">
-                </div>
-                <div class="hqDiv" style="border-width: 0px;" id="zsdiv3">
-                </div>
-            </div>
-            <div id="foot_b2">
-                <span style="padding-left: 389px;">©2013 Windin 沪ICP备08006790号</span><span style="padding-left: 140px"><a
-                    href="Business.htm" target="_parent" class="foot_a">代理与合作&nbsp;&nbsp;<span style="color: Red">hot!</span></a></span>
-                <span style="padding-right: 19px; padding-left: 19px;">|</span><a href="AboutUs.htm"
-                    target="_parent" class="foot_a">关于我们</a> <span style="padding-right: 19px; padding-left: 19px;">|</span><a href="UseTerms.htm"
-                    target="_parent" class="foot_a">使用条款</a>
-            </div>
-        </div>
-		
-        </div>
-    </div>
-</body>
-</html>
-
+<header class="public_header public_header_white">
+<a href="/" class="public_h_logo"><img src="/https://3g.d1xz.netstatics/d1xz/wap/images/logo/index.png" alt=""></a>
+<a href="/about/sitemap.aspx" class="public_h_more"><i></i></a></header>
+<nav class="nav">
+<a href="https://3g.d1xz.net/astro/">星座</a>
+<a href="https://3g.d1xz.net/yunshi/">运势</a>
+<a href="https://3g.d1xz.net/test/">测试</a>
+<a href="https://3g.d1xz.net/tarot/">塔罗</a>
+<a href="https://3g.d1xz.net/sx/">生肖</a>
+<a href="https://3g.d1xz.net/rili/">黄历</a>
+<a href="https://3g.d1xz.net/sm/">算命</a>
+<a href="https://3g.d1xz.net/jm/">解梦</a>
+<a href="https://3g.d1xz.net/fsml/">风水</a>
+<a href="https://3g.d1xz.net/mingli/">命理</a>
+<a href="https://3g.d1xz.net/wenhua/">文化</a>
+<a href="https://3g.d1xz.net/zt/">专题</a>
+</nav>
+<div class="public_graphic_list bgfff">
+<a href="https://3g.d1xz.net/astro/shishang/art268922.aspx" class="public_gl_box">
+<img src="https://img.d1xz.net/d/2018/05/5afe814ed9ecd.jpg" alt="实力宠夫 爱得有底气的星座女">
+<h3>实力宠夫 爱得有底气的星座女</h3><p>在爱情中说到宠爱，往往都是男人对女人的宠爱，会包容着对方……</p>
+</a>
+<a href="https://3g.d1xz.net/astro/qinggan/art268865.aspx" class="public_gl_box">
+<img src="https://img.d1xz.net/d/2018/05/5afe817244f62.jpg" alt="12星座女生成为保姆式妻子的指数">
+<h3>12星座女生成为保姆式妻子的指数</h3>
+<p>在很多女生看来，成为保姆式妻子好像是再正常不过的事情了。毕竟自己的……　　　　</p>
+</a>
+</div>
+<div class="public_col_2">
+<a href="https://3g.d1xz.net/astro/kaiyun/art267249.aspx">2018年十二星座6月运势</a>
+<a href="https://3g.d1xz.net/sx/zonghe/art267620.aspx">2018年十二生肖6月运势</a>
+<a href="https://3g.d1xz.net/sx/zonghe/2018nianshengxiaoyuncheng/">准确推算2018生肖运程</a>
+<a href="https://3g.d1xz.net/astro/kaiyun/2018nianshierxingzuoyunshi/">2018年星座运势查询</a>
+</div><!--ads:105--><!-- 星座运势 --><div class="public_index_title public_it_xzys mt10">
+<i></i>
+<h3>星座运势</h3><a href="/yunshi/">更多</a></div><div class="public_col_12xz">
+<a href="/yunshi/today/Aries/">白羊</a><a href="/yunshi/today/Taurus/">金牛</a>
+<a href="/yunshi/today/Gemini/">双子</a><a href="/yunshi/today/Cancer/">巨蟹</a><a href="/yunshi/today/Leo/">狮子</a>
+<a href="/yunshi/today/Virgo/">处女</a><a href="/yunshi/today/Libra/">天秤</a><a href="/yunshi/today/Scorpio/">天蝎</a>
+<a href="/yunshi/today/Sagittarius/">射手</a><a href="/yunshi/today/Capricorn/">摩羯</a><a href="/yunshi/today/Aquarius/">水瓶</a>
+<a href="/yunshi/today/Pisces/">双鱼</a>
+</div><div class="public_title_list">
+<a href="https://3g.d1xz.net/astro/kaiyun/art268493.aspx" class="public_tl_box">曼陀罗华每周十二星座运势5.28-6.3</a>
+<a href="https://3g.d1xz.net/sx/zonghe/art268345.aspx" class="public_tl_box">第一运程 十二生肖周运5.28-6.3</a>
+<a href="https://3g.d1xz.net/astro/kaiyun/art268714.aspx" class="public_tl_box">2018年6月份开始转运的星座</a>
+<a href="https://3g.d1xz.net/astro/kaiyun/art268717.aspx" class="public_tl_box">2018年6月运势最好的上升星座</a>
+<a href="https://3g.d1xz.net/astro/kaiyun/art267807.aspx" class="public_tl_box">六月爱情生活缤纷多彩的星座</a>
+</div><!-- 十二星座 --><div class="public_index_title public_it_12xz mt10">
+<i class="bp60_1"></i><h3>十二星座</h3>
+<a href="/astro/">更多</a></div><div class="public_swiper" id="xzSwiper">
+<div class="wrapper">
+<div class="slide">
+<a href="/astro/Aries/" class="box">
+<h3>白羊</h3>
+<img src="/statics/d1xz/wap/images/xz_icon/1.png" alt="">
+<p>(3.21-4.19)</p>
+</a>
+</div>
+<div class="slide"><a href="/astro/Taurus/" class="box"><h3>金牛</h3><img src="/statics/d1xz/wap/images/xz_icon/2.png" alt=""><p>(4.20-5.20)</p></a></div>
+<div class="slide"><a href="/astro/Gemini/" class="box"><h3>双子</h3><img src="/statics/d1xz/wap/images/xz_icon/3.png" alt=""><p>(5.21-6.21)</p></a></div>
+<div class="slide"><a href="/astro/Cancer/" class="box"><h3>巨蟹</h3><img src="/statics/d1xz/wap/images/xz_icon/4.png" alt=""><p>(6.22-7.22)</p></a></div>
+<div class="slide"><a href="/astro/Leo/" class="box"><h3>狮子</h3><img src="/statics/d1xz/wap/images/xz_icon/5.png" alt=""><p>(7.23-8.22)</p></a></div>
+<div class="slide"><a href="/astro/Virgo/" class="box"><h3>处女</h3><img src="/statics/d1xz/wap/images/xz_icon/6.png" alt=""><p>(8.23-9.22)</p></a></div>
+<div class="slide"><a href="/astro/Libra/" class="box"><h3>天秤</h3><img src="/statics/d1xz/wap/images/xz_icon/7.png" alt=""><p>(9.23-10.23)</p></a></div>
+<div class="slide"><a href="/astro/Scorpio/" class="box"><h3>天蝎</h3><img src="/statics/d1xz/wap/images/xz_icon/8.png" alt=""><p>(10.24-11.22)</p></a></div>
+<div class="slide"><a href="/astro/Sagittarius/" class="box"><h3>射手</h3><img src="/statics/d1xz/wap/images/xz_icon/9.png" alt=""><p>(11.23-12.21)</p></a></div>
+<div class="slide"><a href="/astro/Capricorn/" class="box"><h3>摩羯</h3><img src="/statics/d1xz/wap/images/xz_icon/10.png" alt=""><p>(12.22-1.19)</p></a></div>
+<div class="slide"><a href="/astro/Aquarius/" class="box"><h3>水瓶</h3><img src="/statics/d1xz/wap/images/xz_icon/11.png" alt=""><p>(1.20-2.18)</p></a></div>
+<div class="slide"><a href="/astro/Pisces/" class="box"><h3>双鱼</h3><img src="/statics/d1xz/wap/images/xz_icon/12.png" alt=""><p>(2.19-3.20)</p></a></div></div></div>
+<div class="public_graphic_list bgfff"><a href="https://3g.d1xz.net/astro/aiqing/art136695.aspx" class="public_gl_box"><img src="https://img.d1xz.net/d/2018/05/5afe868d04427.jpg" alt="十二星座女什么时候会对另一半死心"><h3>十二星座女什么时候会对另一半死心</h3><p>每个人的为人处事，都有着自己的底线，在倾注了全部身心的爱情中……</p></a></div>
+<div class="public_title_list"><a href="https://3g.d1xz.net/astro/shishang/art268911.aspx" class="public_tl_box">让这些星座说声再见很难</a><a href="https://3g.d1xz.net/astro/shishang/art268923.aspx" class="public_tl_box">这些星座不做别人生命的插曲</a><a href="https://3g.d1xz.net/astro/pisces/art268925.aspx" class="public_tl_box">如何挽回双鱼座女生的芳心</a><a href="https://3g.d1xz.net/astro/gemini/art268926.aspx" class="public_tl_box">追双子座女生可以死缠烂打吗</a><a href="https://3g.d1xz.net/astro/aiqing/art74951.aspx" class="public_tl_box">揭秘十二星座被暗恋率是多少</a></div>
+<div class="public_col_3"><a href="https://3g.d1xz.net/astro/aiqing/">星座爱情</a><a href="https://3g.d1xz.net/astro/gexing/">星座性格</a><a href="https://3g.d1xz.net/astro/shishang/">星座时尚</a><a href="https://3g.d1xz.net/astro/kaiyun/">运程开运</a><a href="https://3g.d1xz.net/astro/Qinggan/">星座情感</a><a href="https://3g.d1xz.net/astro/xinggan/">星座性感</a></div><!--ads:106--><!-- 心理测试 -->
+<div class="public_index_title public_it_xlcs mt10"><i class="bp60_2"></i><h3>心理测试</h3><a href="/test/">更多</a></div>
+<div class="public_test_block"><a href="https://3g.d1xz.net/test/aiqing/art268863.aspx" class="public_tb_box"><img src="https://img.d1xz.net/d/2018/05/5afe875d64221.jpg" alt="2018下半年会有人向你表白吗"><h3>2018下半年会有人向你表白吗</h3><p><b>开始测试</b></p></a></div>
+<div class="public_title_list"><a href="/test/quwei/art269071.aspx" title="置身《楼外楼》中你会是哪个角色" class="public_tl_box">置身《楼外楼》中你会是哪个角色</a><a href="/test/aiqing/art269070.aspx" title="测你真心对待的人 对你会用真心吗" class="public_tl_box">测你真心对待的人 对你会用真心吗</a><a href="/test/zonghe/art269058.aspx" title="你和双子座的人有缘相守一生吗" class="public_tl_box">你和双子座的人有缘相守一生吗</a><a href="/test/aiqing/art269042.aspx" title="你和狮子座的人有缘相守一生吗" class="public_tl_box">你和狮子座的人有缘相守一生吗</a><a href="/test/aiqing/art269024.aspx" title="你和巨蟹座的人有缘相守一生吗" class="public_tl_box">你和巨蟹座的人有缘相守一生吗</a></div>
+<div class="public_col_4"><a href="https://3g.d1xz.net/test/aiqing/">爱情测试</a><a href="https://3g.d1xz.net/test/zhishang/">智商测试</a><a href="https://3g.d1xz.net/test/gexing/">性格测试</a><a href="https://3g.d1xz.net/test/quwei/">趣味测试</a><a href="https://3g.d1xz.net/test/zonghe/">综合测试</a><a href="https://3g.d1xz.net/test/shejiao/">社交测试</a><a href="https://3g.d1xz.net/test/caifu/">财富测试</a><a href="https://3g.d1xz.net/test/zhiye/">职业测试</a></div><!-- 十二生肖 -->
+<div class="public_index_title public_it_12sx mt10"><i class="bp60_3"></i><h3>十二生肖</h3><a href="/sx/">更多</a></div>
+<div class="public_swiper" id="sxSwiper">
+<div class="wrapper">
+<div class="slide"><a href="/sx/shu/" class="box"><h3>属鼠</h3><img src="/statics/d1xz/wap/images/sx_icon/1.png" alt=""><p>1984 1996</p></a></div>
+<div class="slide"><a href="/sx/niu/" class="box"><h3>属牛</h3><img src="/statics/d1xz/wap/images/sx_icon/2.png" alt=""><p>1985 1997</p></a></div>
+<div class="slide"><a href="/sx/hu/" class="box"><h3>属虎</h3><img src="/statics/d1xz/wap/images/sx_icon/3.png" alt=""><p>1986 1998</p></a></div>
+<div class="slide"><a href="/sx/tu/" class="box"><h3>属兔</h3><img src="/statics/d1xz/wap/images/sx_icon/4.png" alt=""><p>1987 1999</p></a></div>
+<div class="slide"><a href="/sx/long/" class="box"><h3>属龙</h3><img src="/statics/d1xz/wap/images/sx_icon/5.png" alt=""><p>1988 2000</p></a></div>
+<div class="slide"><a href="/sx/she/" class="box"><h3>属蛇</h3><img src="/statics/d1xz/wap/images/sx_icon/6.png" alt=""><p>1989 2001</p></a></div>
+<div class="slide"><a href="/sx/ma/" class="box"><h3>属马</h3><img src="/statics/d1xz/wap/images/sx_icon/7.png" alt=""><p>1990 2002</p></a></div>
+<div class="slide"><a href="/sx/yang/" class="box"><h3>属羊</h3><img src="/statics/d1xz/wap/images/sx_icon/8.png" alt=""><p>1991 2003</p></a></div>
+<div class="slide"><a href="/sx/hou/" class="box"><h3>属猴</h3><img src="/statics/d1xz/wap/images/sx_icon/9.png" alt=""><p>1992 2004</p></a></div>
+<div class="slide"><a href="/sx/ji/" class="box"><h3>属鸡</h3><img src="/statics/d1xz/wap/images/sx_icon/10.png" alt=""><p>1993 2005</p></a></div>
+<div class="slide"><a href="/sx/gou/" class="box"><h3>属狗</h3><img src="/statics/d1xz/wap/images/sx_icon/11.png" alt=""><p>1994 2006</p></a></div>
+<div class="slide"><a href="/sx/zhu/" class="box"><h3>属猪</h3><img src="/statics/d1xz/wap/images/sx_icon/12.png" alt=""><p>1995 2007</p></a></div>
+</div>
+</div>
+<div class="public_graphic_list bgfff">
+<a href="https://3g.d1xz.net/sx/zonghe/art268361.aspx" class="public_gl_box">
+<img src="https://img.d1xz.net/d/2018/05/5afe8a68b9b16.jpg" alt="6月份会喜上眉梢的生肖"><h3>6月份会喜上眉梢的生肖</h3><p>对于新时代的年轻人来说，没办法拼爹只能想办法拼命，每个人都不是……</p></a>
+</div>
+<div class="public_title_list">
+<a href="/sx/zhu/art268951.aspx" title="2018年6月属猪人财运预报" class="public_tl_box">2018年6月属猪人财运预报</a>
+<a href="/sx/zhu/art268948.aspx" title="2018年6月属猪人爱情运势" class="public_tl_box">2018年6月属猪人爱情运势</a>
+<a href="/sx/yang/art268947.aspx" title="2018年6月属羊人爱情运势" class="public_tl_box">2018年6月属羊人爱情运势</a>
+<a href="/sx/zhu/art268946.aspx" title="2018年6月属猪可能遇到的倒霉事" class="public_tl_box">2018年6月属猪可能遇到的倒霉事</a>
+<a href="/sx/she/art268944.aspx" title="2018年六月属蛇人和哪些属相犯冲" class="public_tl_box">2018年六月属蛇人和哪些属相犯冲</a>
+</div>
+<div class="public_col_3">
+<a href="https://3g.d1xz.net/sx/zonghe/">生肖运势</a>
+<a href="https://3g.d1xz.net/sx/">生肖解说</a>
+<a href="https://3g.d1xz.net/sx/aiqing/">生肖爱情</a>
+<a href="https://3g.d1xz.net/sx/xingge/">生肖性格</a>
+<a href="https://3g.d1xz.net/sx/zonghe/gounianbenmingnian/">狗年本命年</a>
+<a href="https://3g.d1xz.net/sx/zonghe/2018nianshengxiaoyuncheng/">2018生肖运势</a>
+</div>
+<!-- 在线算命 -->
+<div class="public_index_title public_it_zxsm mt10"><i class="bp60_4"></i><h3>在线算命</h3><a href="/sm/">更多</a></div>
+<div class="index_mod_sm">
+<div class="ims_img">
+<a href="https://go.d1xz.net/d1xzMSYsmttNO1" target="_blank">
+<img src="https://img.d1xz.net/d/2018/03/5abc98bdb4a73.png" alt="八字合婚">八字合婚</a>
+<a href="https://go.d1xz.net/d1xzMSYsmttNO2" target="_blank">
+<img src="https://img.d1xz.net/d/2018/03/5abc98c7e8fae.png" alt="八字终生运">八字终生运</a>
+<a href="https://go.d1xz.net/d1xzMSYsmttNO3" target="_blank">
+<img src="https://img.d1xz.net/d/2018/03/5abc98d1872bf.png" alt="八字精批">八字精批</a>
+<a href="https://go.d1xz.net/d1xzMSYsmttNO5" target="_blank">
+<img src="https://img.d1xz.net/d/2018/03/5abc98da71422.png" alt="紫微斗数">紫微斗数</a>
+</div>
+<div class="ims_box">
+<a href="https://go.d1xz.net/d1xzMSYNO1"><span>婚姻测算</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO2"><span>姓名配对</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO3"><span>十年大运</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO4"><span>星座配对</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO5"><span>八字财运</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO6"><span>缘分测试</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO7"><span>塔罗占卜</span></a>
+<a href="https://go.d1xz.net/d1xzMSYNO8"><span>追爱秘籍</span></a>
+</div>
+</div>
+<!-- 周公解梦 -->
+<div class="public_index_title public_it_zgjm mt10"><i class="bp60_5"></i><h3>周公解梦</h3><a href="/jm/">更多</a></div>
+<div class="public_jm_form_small"><form method="get" action="/jm/search.aspx" id="jmform"><input type="text" placeholder="解梦搜索，如：下雨、蛇、打架" class="input" name="k"><input type="submit" value="开始解梦" class="btn"></form></div>
+<div class="public_col_3"><a href="https://3g.d1xz.net/jm/qingai/">梦见情爱</a><a href="https://3g.d1xz.net/jm/shenghuo/">梦见生活</a><a href="https://3g.d1xz.net/jm/ziran/">梦见自然</a><a href="https://3g.d1xz.net/jm/jianzhu/">梦见建筑</a><a href="https://3g.d1xz.net/jm/guishen/">梦见鬼神</a><a href="https://3g.d1xz.net/jm/shenti/">梦见身体</a><a href="https://3g.d1xz.net/jm/wupin/">梦见物品</a><a href="https://3g.d1xz.net/jm/dongwu/">梦见动物</a><a href="https://3g.d1xz.net/jm/renwu/">梦见人物</a></div><!-- 风水命理 -->
+<div class="public_index_title public_it_fsml mt10"><i class="bp60_6"></i><h3>风水命理</h3><a href="/fsml/">更多</a></div>
+<div class="public_graphic_list bt1px"><a href="https://3g.d1xz.net/fsml/xsdq/art260338.aspx" class="public_gl_box"><img src="https://img.d1xz.net/d/2018/05/5afe8bbe146e3.jpg" alt="耳朵很薄的女人命运好吗"><h3>耳朵很薄的女人命运好吗</h3><p>很多女人都喜欢通过自己的面相特征，了解自己的性格特点，以及一生……</p></a></div>
+<div class="public_title_list"><a href="/fsml/bgml/art269061.aspx" title="与水命对象结婚必知的要点" class="public_tl_box">与水命对象结婚必知的要点</a><a href="/fsml/kyhs/art269059.aspx" title="属兔人应该带公貔貅还是母貔貅" class="public_tl_box">属兔人应该带公貔貅还是母貔貅</a><a href="/fsml/kyhs/art269043.aspx" title="属鼠人应该带公貔貅还是母貔貅" class="public_tl_box">属鼠人应该带公貔貅还是母貔貅</a><a href="/fsml/kyhs/art269040.aspx" title="属牛人应该带公貔貅还是母貔貅" class="public_tl_box">属牛人应该带公貔貅还是母貔貅</a><a href="/fsml/kyhs/art269039.aspx" title="属虎人应该带公貔貅还是母貔貅" class="public_tl_box">属虎人应该带公貔貅还是母貔貅</a></div>
+<div class="public_col_3"><a href="https://3g.d1xz.net/fsml/aqfs/">爱情风水</a><a href="https://3g.d1xz.net/fsml/kyhs/">开运化煞</a><a href="https://3g.d1xz.net/fsml/fszc/">风水招财</a><a href="https://3g.d1xz.net/fsml/xsdq/">相术大全</a><a href="https://3g.d1xz.net/fsml/bgml/">八卦命理</a><a href="https://3g.d1xz.net/fsml/syfs/">事业风水</a><a href="https://3g.d1xz.net/fsml/xmcz/">姓名测字</a><a href="https://3g.d1xz.net/fsml/kypf/">开运偏方</a><a href="https://3g.d1xz.net/fsml/jiajufengshui/">家居风水</a></div><!-- 文化风俗 -->
+<div class="public_index_title public_it_whfs mt10"><i class="bp60_7"></i><h3>文化风俗</h3><a href="/wenhua/">更多</a></div>
+<div class="public_graphic_list bt1px"><a href="https://3g.d1xz.net/wenhua/yinshi/art252962.aspx" class="public_gl_box"><img src="https://img.d1xz.net/d/2018/05/5afe8d170e3ff.jpg" alt="这6种蔬菜对眼睛视力好"><h3>这6种蔬菜对眼睛视力好</h3><p>众所周知，眼睛是心灵的窗户。不过如今随着科技的发展，使用电子产品……</p></a></div>
+<div class="public_title_list"><a href="/wenhua/minzu/art268972.aspx" title="杰出人物 世界十大科学家" class="public_tl_box">杰出人物 世界十大科学家</a><a href="/wenhua/minzu/art268971.aspx" title="英国著名科学家 艾萨克·牛顿爵士" class="public_tl_box">英国著名科学家 艾萨克·牛顿爵士</a><a href="/wenhua/minzu/art268968.aspx" title="阿尔伯特 爱因斯坦" class="public_tl_box">阿尔伯特 爱因斯坦</a><a href="/wenhua/minzu/art268967.aspx" title="德国著名数学家 戴维·希尔伯特" class="public_tl_box">德国著名数学家 戴维·希尔伯特</a><a href="/wenhua/chengshi/art268966.aspx" title="秘鲁再添未解之谜 新地画令人惊奇" class="public_tl_box">秘鲁再添未解之谜 新地画令人惊奇</a></div>
+<div class="public_col_4"><a href="https://3g.d1xz.net/wenhua/yinshi/">饮食文化</a><a href="https://3g.d1xz.net/wenhua/chengshi/">城市文化</a><a href="https://3g.d1xz.net/wenhua/zongjiao/">宗教文化</a><a href="https://3g.d1xz.net/wenhua/minzu/">民族文化</a></div><!-- 塔罗牌 -->
+<div class="public_index_title public_it_tlp mt10"><i class="bp60_8"></i><h3>塔罗牌</h3><a href="/tarot/">更多</a></div>
+<div class="public_title_list bt1px"><a href="/tarot/yuce/art268978.aspx" title="塔罗占卜：属于你的正桃花何时出现" class="public_tl_box">塔罗占卜：属于你的正桃花何时出现</a><a href="/tarot/yuce/art268977.aspx" title="塔罗占卜：测你们之间为什么出现感情问题" class="public_tl_box">塔罗占卜：测你们之间为什么出现感情问题</a><a href="/tarot/yuce/art268976.aspx" title="塔罗占卜：你的命中注定何时到来" class="public_tl_box">塔罗占卜：你的命中注定何时到来</a><a href="/tarot/yuce/art268975.aspx" title="塔罗占卜：你和ta能一起走到白发苍苍吗" class="public_tl_box">塔罗占卜：你和ta能一起走到白发苍苍吗</a><a href="/tarot/yuce/art268974.aspx" title="塔罗占卜：下半年的事业发展状况" class="public_tl_box">塔罗占卜：下半年的事业发展状况</a></div>
+<div class="public_col_4"><a href="https://3g.d1xz.net/tarot/gjpz/">高级牌阵</a><a href="https://3g.d1xz.net/tarot/zjpz/">中级牌阵</a><a href="https://3g.d1xz.net/tarot/cjpz/">初级牌阵</a><a href="https://3g.d1xz.net/tarot/zhishi/">塔罗知识</a></div><!-- 血型 -->
+<div class="public_index_title public_it_xx mt10"><i class="bp60_9"></i><h3>血型</h3><a href="/xx/">更多</a></div>
+<div class="public_title_list bt1px"><a href="/xx/zonghe/art268982.aspx" title="各血型献血时的千姿百态" class="public_tl_box">各血型献血时的千姿百态</a><a href="/xx/zonghe/art268981.aspx" title="利益or感情 各血型如何取舍" class="public_tl_box">利益or感情 各血型如何取舍</a><a href="/xx/zonghe/art268980.aspx" title="当血型们遇到挫折时还能保持正能量状态吗" class="public_tl_box">当血型们遇到挫折时还能保持正能量状态吗</a><a href="/xx/zonghe/art268979.aspx" title="佛系or驾驭 各血型都是怎样经营爱情的呢" class="public_tl_box">佛系or驾驭 各血型都是怎样经营爱情的呢</a>
+<a href="/xx/zonghe/art268791.aspx" title="各血型中谁投入感情的速度最快" class="public_tl_box">各血型中谁投入感情的速度最快</a></div>
+<div class="public_col_4">
+<a href="https://3g.d1xz.net/xx/a/">A型血</a>
+<a href="https://3g.d1xz.net/xx/b/">B型血</a>
+<a href="https://3g.d1xz.net/xx/ab/">AB型血</a>
+<a href="https://3g.d1xz.net/xx/o/">O型血</a>
+</div><!-- 作家专栏 -->
+<div class="public_index_title public_it_zjzl mt10"><i class="bp60_10"></i><h3>作家专栏</h3><a href="/zl/">更多</a></div>
+<div class="public_mod_zj">
+<a href="https://3g.d1xz.net/zl/maoshiduihua.aspx" class="public_mz_index">
+<div class="public_mz_img"><img src="https://p.d1xz.net/2015/11/3/lanmu45.jpg" alt="猫石对话"></div>
+<h3>猫石对话</h3><p>类别：</p></a>
+<a href="https://3g.d1xz.net/zl/zhengboshi.aspx" class="public_mz_index">
+<div class="public_mz_img">
+<img src="https://p.d1xz.net/2015/11/3/lanmu44.jpg" alt="郑博士说风水">
+</div>
+<h3>郑博士说风水</h3><p>类别：</p>
+</a>
+<a href="https://3g.d1xz.net/zl/bluetears.aspx" class="public_mz_index">
+<div class="public_mz_img"><img src="https://p.d1xz.net/2015/11/3/lanmu32.jpg" alt="水蓝色眼泪"></div>
+<h3>水蓝色眼泪</h3><p>类别：</p></a>
+<a href="https://3g.d1xz.net/zl/susanmiller.aspx" class="public_mz_index">
+<div class="public_mz_img"><img src="https://p.d1xz.net/2015/11/3/lanmu31.jpg" alt="苏珊米勒"></div><h3>苏珊米勒</h3><p>类别：</p></a>
+<a href="https://3g.d1xz.net/zl/baiqi.aspx" class="public_mz_index"><div class="public_mz_img">
+<img src="https://img.d1xz.net/d/2018/02/5a72d218b56e8.jpg" alt="肖百奇"></div><h3>肖百奇</h3><p>类别：</p></a>
+<a href="https://3g.d1xz.net/zl/nownow.aspx" class="public_mz_index"><div class="public_mz_img">
+<img src="https://p.d1xz.net/2015/11/3/lanmu29.jpg" alt="闹闹女巫店"></div><h3>闹闹女巫店</h3><p>类别：</p></a></div><!-- 专题 -->
+<div class="public_index_title public_it_zt mt10">
+<i class="bp60_11"></i><h3>专题</h3><a href="/zt/">更多</a>
+</div>
+<div class="index_mod_zt">
+<div class="imz_block">
+<a href="https://3g.d1xz.net/astro/kaiyun/2018nianshierxingzuoyunshi/">12星座2018年运势</a>
+</div>
+<div class="imz_block"><a href="https://3g.d1xz.net/sx/zonghe/2018nianshengxiaoyuncheng/">2018年12生肖运程</a></div>
+<div class="imz_block"><a href="https://3g.d1xz.net/rili/jieri/chunjie/">春节</a></div>
+<div class="imz_block"><a href="https://3g.d1xz.net/test/zhishangceshitijingxuan/">智商测试题</a></div>
+<div class="imz_block"><a href="https://3g.d1xz.net/astro/2018nianyunchengcesuan/">2018全年运程解析</a></div>
+<div class="imz_block"><a href="https://3g.d1xz.net/sx/zonghe/gounianbenmingnian/">狗年本命年</a></div>
+<div class="imz_block"><a href="https://3g.d1xz.net/fsml/xsdq/mianxiang/">面相图解大全</a></div>
+<div class="imz_block"><a href="https://3g.d1xz.net/zt/piqiu/">貔貅摆件</a></div>
+</div>
+<div class="public_col_3">
+<a href="https://3g.d1xz.net/zt/astro/">星座专题</a>
+<a href="https://3g.d1xz.net/zt/xlcs/">测试专题</a>
+<a href="https://3g.d1xz.net/zt/sx/">生肖专题</a>
+<a href="https://3g.d1xz.net/zt/fsml/">风水专题</a>
+<a href="https://3g.d1xz.net/zt/rili/">黄历专题</a>
+<a href="https://3g.d1xz.net/zt/wenhua/">文化专题</a>
+</div>
 <script type="text/javascript">
-    var defaultValue = "代码 / 简称 / 拼音";
-    var ParseUrl = "http://www.windin.com/Parse.ps?SearchText={0}&t=1";
-    function txtSearch_onfocus(obj) {
-        if (obj.value == defaultValue) obj.value = "";
-    }
-    function txtSearch_onblur(obj) {
-        if (obj.value == "") obj.value = defaultValue;
-    }
-    function trim(s) {
-        return s.replace("/^\s.?|\s.?$/g", "");
-    }
-    function btnWindCode() {
-        var windcode = document.getElementById("txtSearch").value;
-        if (windcode == null || windcode == undefined) windcode = "";
-        windcode = trim(windcode);
-        if (windcode == defaultValue || windcode == "") {
-            alert("请输入正确的[代码/简称/拼音]");
-            return false;
-        }
-        var url = ParseUrl.replace("{0}", encodeURI(windcode));
-        window.location.href = url;
-    }
-    document.getElementById("txtSearch").onkeypress = function() {
-        if (window.event.keyCode == 13) {
-            btnWindCode();
-        }
-    }
-</script>
-
+        document.write('<a style="display:none!important" id="tanx-a-mm_10489728_556314_74574055"></a>');
+        tanx_s = document.createElement("script");
+        tanx_s.type = "text/javascript";
+        tanx_s.charset = "gbk";
+        tanx_s.id = "tanx-s-mm_10489728_556314_74574055";
+        tanx_s.async = true;
+        tanx_s.src = "https://p.tanx.com/ex?i=mm_10489728_556314_74574055";
+        tanx_h = document.getElementsByTagName("head")[0];
+        if(tanx_h)tanx_h.insertBefore(tanx_s,tanx_h.firstChild);
+</script><!--ads:107--><footer class="public_footer"><div class="public_f_search"><form action="//search.d1xz.net/cse/search" id="zn_search"><input type="text" placeholder="测测你的前世" class="input" name="q"><input type="submit" class="btn" onclick="document.getElementById('zn_search').action='http://search.d1xz.net/cse/search'" value=""><input type="hidden" name="s" value="7667773742933365816"></form></div><div class="public_f_nav"><a href="/astro/">星座</a><a href="/yunshi/">运势</a><a href="/test/">测试</a><a href="/tarot/">塔罗</a><a href="/sx/">生肖</a><a href="/rili/">黄历</a><a href="/sm/">算命</a><a href="/jm/">解梦</a><a href="/fsml/">风水</a><a href="/mingli/">命理</a><a href="/wenhua/">文化</a><a href="/zt/">专题</a></div><div class="public_f_link" id="friendLink">友情链接：
+         <a href="http://wap.ttrar.com/" target="_blank">天天下载</a><a href="https://m.fuyuandian.com/" target="_blank">福缘殿</a><a href="http://m.xingzuo360.cn/" target="_blank">360星座网</a><a href="http://wap.azg168.cn/" target="_blank">风水</a><a href="http://m.qixiangwang.cn/" target="_blank">天气预报查询</a><a href="http://3g.7723.cn/" target="_blank">7723手机游戏</a><a href="http://m.cntaijiquan.com/" target="_blank">中国太极拳网</a><a href="http://3g.xiziwang.net" target="_blank">发型设计</a><a href="http://m.onegreen.net/" target="_blank">qq网名</a><a href="http://m.meiwen.com.cn/" target="_blank">美文</a><a href="https://web.phb123.com/" target="_blank">品牌加盟排行榜</a><a href="https://3g.d1xz.net/" target="_blank">第一星座网</a><a href="http://m.huangye88.com/" target="_blank">黄页88网</a><span class="ico_up" onclick="var lObj=document.getElementById('friendLink');this.className=='ico_up'?(this.className='ico_down',lObj.style.height='auto'):(this.className='ico_up',lObj.style.height='24px');"></span></div><div class="public_f_copyright"><p class="public_f_p"><a href="/about/">关于我们</a><a href="//3g.d1xz.net">触屏版</a><a href="https://3g.d1xz.net">电脑版</a></p><p>copyright©2005-2018 <a href="//3g.d1xz.net">3g.d1xz.net</a></p><p>第一星座网版权所有</p></div></footer><div style="display: none"><script>
+        var _hmt = _hmt || [];
+        (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?f3501e4aa949cc30e74b79c27df26b19";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script><script src="https://s95.cnzz.com/z_stat.php?id=1261396340&web_id=1261396340" language="JavaScript"></script></div></body></html>
