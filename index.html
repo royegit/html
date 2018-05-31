@@ -1,0 +1,187 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>首页</title>
+    <style type="text/css">
+        html, body
+        {
+            margin: 0;
+            border: 0;
+            padding: 0;
+            background-color: #fff;
+            font-size: 12px;
+        }
+        body
+        {
+            filter: progid:DXImageTransform.Microsoft.Gradient (gradientType=0,startColorStr=#f8fafd,endColorStr=#d6d7db);
+            background: -moz-linear-gradient(top, #f8fafd, #d6d7db);
+            background: -webkit-gradient(linear, 0 0, 0 bottom, from(#f8fafd), to(#d6d7db));
+        }
+        a
+        {
+            color: #000;
+            text-decoration: none;
+            border-width: 0px;
+        }
+        a img
+        {
+            border-width: 0px;
+        }
+        a:Active
+        {
+            color: #0981b7;
+        }
+        table, td
+        {
+            border-collapse: collapse;
+            border-width: 0px;
+        }
+        #content_div
+        {
+            width: 1024px;
+            margin: 0 auto auto auto;
+            background-color: #fff;
+        }
+        #divTipLeft
+        {
+            width: 17px;
+            display: inline-block;
+            float: left;
+            z-index: 2;
+            margin-left: 200px;
+            _margin-left: 100px;
+        }
+        #divTipMid
+        {
+            width: 470px;
+            display: inline-block;
+            float: left;
+            border: solid 1px #c0c0c0;
+            border-left-width: 0px;
+            border-right-width: 0px;
+            height: 47px;
+            _height: 44px;
+        }
+        #txtSearch
+        {
+            width: 100%;
+            height: 43px;
+            border-width: 0px;
+            line-height: 43px;
+            color: #8D8D8D;
+            background-color: Transparent;
+            outline-width: 0px;
+        }
+        #divFind
+        {
+            width: 120px;
+            display: inline-block;
+            float: left;
+            z-index: 2;
+        }
+        #btnFind
+        {
+            width: 138px;
+            height: 49px;
+            background-repeat: no-repeat;
+            border-width: 0px;
+            background-image: url('http://www.windin.com/windin2/images/bb.jpg');
+            display: inline-block;
+            cursor: hand;
+        }
+        #btnFind:hover
+        {
+            background-image: url('http://www.windin.com/windin2/images/_bb.jpg');
+        }
+    </style>
+
+    <script type="text/javascript">
+        function IE6NoMoreEvent(func) { var oldonload = window.onload; if (typeof window.onload != "function") { window.onload = func; } else { window.onload = function() { oldonload(); func(); } }; }
+
+        if (/MSIE\s([^;|^)]+)/.test(navigator.userAgent) && parseFloat(RegExp["$1"]) < 7) {
+            IE6NoMoreEvent(function() {
+                try {
+                    var chirdNode = document.createElement("div");
+
+                    chirdNode.innerHTML = "<div style='text-align:center;clear:both;position:relative;'><div style='border:1px solid #F7941D; background:#FEEFDA;width:99%;height:70px;'><div style='float:right;top:3px;'><a style='text-decoration:none;font-size:12px;color:#000;' href='javascript:void;' title='关闭(close)' onclick='javascript:this.parentNode.parentNode.parentNode.style.display=\"none\"; return false;'>[关闭]</a></div><div style='width:590px;'><div style='float:left;width:580px;margin-left:12px;text-align:left;padding:0px;overflow:hidden;'><div style='font-size:14px;font-weight:bold;margin-top:12px;'>您当前使用的IE的浏览器的版本过低（6.0或者6.0以下）</div><div style='font-size:12px;margin-top:16px;line-height:12px;'>为了更好的使用我们提供的产品，请到微软官网下载升级到一个高版本的IE浏览器(推荐版本：8.0或者9.0)。</div></div></div></div></div>";
+                    document.body.insertBefore(chirdNode, document.body.childNodes[0]);
+                } catch (err) { }
+            });
+        }
+
+    </script>
+
+</head>
+<body>
+    <div id="content_div">
+        <div id="top">
+            <iframe src="http://www.windin.com/windin2/TopHtml.htm" frameborder="0" scrolling="no" width="100%" height="105px">
+            </iframe>
+        </div>
+        <div style="height: 614px;">
+            <div style="text-align: center;  margin-top: 66px; height:55px">
+                <!--div id="divTipLeft">
+                    <img src="images/万点首页0724_03.jpg" /></div>
+                <div id="divTipMid">
+                    <input type="text" id="txtSearch" value="代码 / 简称 / 拼音" onblur="txtSearch_onblur(this)"
+                        onfocus="txtSearch_onfocus(this)" autocomplete="off" />
+                </div>
+                <div id="divFind">
+                    <input id="btnFind" type="button" onclick="return btnWindCode()" /></div-->
+            </div>
+            <div style="text-align: center;  margin-top:66px">
+                <table width="95%" style=" margin:0px auto ">
+                    <tr>
+                        <td style="width: 50%" align="center">
+                            <a href="Product.htm" target="_blank">
+                                <img alt="" src="http://www.windin.com/windin2/images/p1.jpg" /></a>
+                        </td>
+                        <td align="right" valign="bottom" style=" padding-right:60px">
+                            <img src="http://www.windin.com/windin2/images/二维码.jpg" />
+                            <br />
+                            <a href="http://114.80.154.42/MobileNetWeb/Ad/iWind/iWind.htm" target="_blank">                            	 
+                                <img src="http://www.windin.com/windin2/images/p2.jpg" /></a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="foot">
+            <iframe src="http://www.windin.com/windin2/footHtml.htm" frameborder="0" scrolling="no" width="100%" height="105px">
+            </iframe>
+        </div>
+    </div>
+</body>
+</html>
+
+<script type="text/javascript">
+    var defaultValue = "代码 / 简称 / 拼音";
+    var ParseUrl = "http://www.windin.com/Parse.ps?SearchText={0}&t=1";
+    function txtSearch_onfocus(obj) {
+        if (obj.value == defaultValue) obj.value = "";
+    }
+    function txtSearch_onblur(obj) {
+        if (obj.value == "") obj.value = defaultValue;
+    }
+    function trim(s) {
+        return s.replace("/^\s.?|\s.?$/g", "");
+    }
+    function btnWindCode() {
+        var windcode = document.getElementById("txtSearch").value;
+        if (windcode == null || windcode == undefined) windcode = "";
+        windcode = trim(windcode);
+        if (windcode == defaultValue || windcode == "") {
+            alert("请输入正确的[代码/简称/拼音]");
+            return false;
+        }
+        var url = ParseUrl.replace("{0}", encodeURI(windcode));
+        window.location.href = url;
+    }
+    document.getElementById("txtSearch").onkeypress = function() {
+        if (window.event.keyCode == 13) {
+            btnWindCode();
+        }
+    }
+</script>
+
